@@ -39,9 +39,9 @@ function wff_scripts() {
 	wp_register_script( 'modernizr', $path . '/js/vendor/modernizr-2.7.0.min.js', array(), null, false );
 
 	//Mobile Scripts
-	wp_register_script( 'touchswipe_js', $path . '/js/vendor/jquery.touchSwipe.min.js', array(), null, false );
-	wp_register_script( 'sidr_js', $path . '/js/vendor/jquery.sidr.min.js', array(), null, false );
-	wp_register_script( 'perfect_scrollbar', $path . '/js/vendor/perfect-scrollbar.jquery.js', array(), null, false );
+	wp_register_script( 'touchswipe_js', $path . '/js/vendor/jquery.touchSwipe.min.js', array( 'jquery' ), null, false );
+	wp_register_script( 'sidr_js', $path . '/js/vendor/jquery.sidr.min.js', array( 'jquery' ), null, false );
+	wp_register_script( 'perfect_scrollbar', $path . '/js/vendor/perfect-scrollbar.jquery.js', array( 'jquery' ), null, false );
 	// Enqueue Font Awesome
 
 	// Custom Scripts
